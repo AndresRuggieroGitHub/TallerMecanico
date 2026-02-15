@@ -1,4 +1,4 @@
-# Gestor de Taller Mecánico
+# 🔧 Gestor de Taller Mecánico
 
 ![Java](https://img.shields.io/badge/Java-11%2B-blue)
 ![Gradle](https://img.shields.io/badge/Build-Gradle-green)
@@ -8,26 +8,30 @@
 
 Aplicación Java para la gestión de un taller mecánico. Permite administrar clientes, vehículos y revisiones con una interfaz gráfica.
 
-## Descripción
+
+## 📋 Descripción
 
 Sistema que facilita la gestión integral de un taller mecánico:
 - Gestión de clientes (DNI, nombre, teléfono)
 - Control de vehículos (marca, modelo, matrícula)
 - Seguimiento de revisiones y cálculo de costos
 
-## Características principales
+
+## 🚀 Características principales
 
 - Gestión completa de clientes, vehículos y revisiones
 - Interfaz gráfica con Swing
 - Validación de datos (DNI, teléfono, matrícula)
 - Cálculo automático de costos de reparación
 
-## Requisitos
+
+## 📦 Requisitos
 
 - Java 11 o superior
 - Gradle (incluye wrapper en el proyecto)
 
-## Instalación y uso
+
+## ▶️ Instalación y uso
 
 ```bash
 # Clonar el repositorio
@@ -44,7 +48,8 @@ cd TallerMecanico
 ./gradlew test
 ```
 
-## Estructura del proyecto
+
+## 📂 Estructura del proyecto
 
 ```
 src/main/java/org/iesalandalus/programacion/tallermecanico/
@@ -56,7 +61,8 @@ src/main/java/org/iesalandalus/programacion/tallermecanico/
     └── GestionTallerMecanico.java (GUI)
 ```
 
-## Cómo usar
+
+## 🧭 Cómo usar
 
 1. **Clientes**: Agregar nombre, DNI y teléfono
 2. **Vehículos**: Registrar marca, modelo y matrícula
@@ -64,9 +70,15 @@ src/main/java/org/iesalandalus/programacion/tallermecanico/
 
 Los datos incluyen validaciones para DNI español, teléfono y matrícula.
 
+
 ## Tecnologías
 
 - Java 11
 - Gradle
 - Swing (interfaz)
 - JUnit 5 y Mockito (testing)
+
+
+## 📄 Licencia
+
+Este proyecto está bajo la licencia **MIT** — ver `LICENSE`.
