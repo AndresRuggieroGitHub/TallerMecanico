@@ -1,5 +1,11 @@
 # Gestor de Taller Mecánico
 
+![Java](https://img.shields.io/badge/Java-11%2B-blue)
+![Gradle](https://img.shields.io/badge/Build-Gradle-green)
+![Swing](https://img.shields.io/badge/GUI-Swing-orange)
+![JUnit](https://img.shields.io/badge/Test-JUnit%205-red)
+![License](https://img.shields.io/badge/License-MIT-lightgrey)
+
 Aplicación Java para la gestión de un taller mecánico. Permite administrar clientes, vehículos y revisiones con una interfaz gráfica.
 
 ## Descripción
