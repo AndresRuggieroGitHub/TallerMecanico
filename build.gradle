@@ -23,7 +23,7 @@ test {
 }
 
 application {
-    mainClass.set('org.iesalandalus.programacion.tallermecanico.Main')
+    mainClass.set('org.iesalandalus.programacion.tallermecanico.vista.GestionTallerMecanico')
 }
 
 run {
