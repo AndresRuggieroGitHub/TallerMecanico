@@ -1,134 +1,66 @@
-# 🔧 Gestor de Taller Mecánico
+# Gestor de Taller Mecánico
 
-**Aplicación Java con interfaz gráfica para la gestión integral de un taller mecánico.**
+Aplicación Java para la gestión de un taller mecánico. Permite administrar clientes, vehículos y revisiones con una interfaz gráfica.
 
-## 📋 Descripción
+## Descripción
 
-Sistema de gestión para talleres mecánicos que permite administrar:
-- **Clientes**: registrar, modificar, buscar y eliminar clientes con información de contacto
-- **Vehículos**: control de marca, modelo y matrícula de todos los coches en el taller
-- **Revisiones**: seguimiento de trabajos de revisión, costos y tiempos de reparación
+Sistema que facilita la gestión integral de un taller mecánico:
+- Gestión de clientes (DNI, nombre, teléfono)
+- Control de vehículos (marca, modelo, matrícula)
+- Seguimiento de revisiones y cálculo de costos
 
-## ✨ Características
+## Características principales
 
-### 🎯 Funcionalidades principales
-- ✅ Gestión completa de clientes (CRUD)
-- ✅ Administración de vehículos
-- ✅ Seguimiento de revisiones y reparaciones
-- ✅ Cálculo automático de costos
-- ✅ Interfaz gráfica intuitiva (Swing)
-- ✅ Validación de datos (DNI, teléfono, matrícula)
+- Gestión completa de clientes, vehículos y revisiones
+- Interfaz gráfica con Swing
+- Validación de datos (DNI, teléfono, matrícula)
+- Cálculo automático de costos de reparación
 
-### 🖥️ Interfaz Gráfica
-La aplicación cuenta con una interfaz moderna con 3 pestañas principales:
-- **👥 Clientes**: Agregar y gestionar clientes
-- **🚗 Vehículos**: Registro y control de vehículos
-- **🔧 Revisiones**: Seguimiento de trabajos en el taller
+## Requisitos
 
-## 🛠️ Tecnologías utilizadas
+- Java 11 o superior
+- Gradle (incluye wrapper en el proyecto)
 
-- **Java 11+**
-- **Gradle** (gestor de dependencias y compilación)
-- **Swing** (interfaz gráfica)
-- **JUnit 5** (testing)
-- **Mockito** (mocking para tests)
+## Instalación y uso
 
-## 📦 Requisitos
-
-- **Java 11** o superior
-- **Gradle 6.0** o superior (opcional, incluye wrapper)
-
-## 🚀 Instalación y Ejecución
-
-### Clonar el repositorio
 ```bash
+# Clonar el repositorio
 git clone https://github.com/AndresRuggieroGitHub/TallerMecanico.git
 cd TallerMecanico
-```
 
-### Compilar
-```bash
+# Compilar
 ./gradlew build
-```
 
-### Ejecutar la aplicación
-```bash
+# Ejecutar
 ./gradlew run
-```
 
-### Ejecutar los tests
-```bash
+# Tests
 ./gradlew test
 ```
 
-## 📂 Estructura del proyecto
+## Estructura del proyecto
 
 ```
-src/
-├── main/java/org/iesalandalus/programacion/tallermecanico/
-│   ├── modelo/
-│   │   ├── Modelo.java                    # Coordinador principal
-│   │   ├── dominio/
-│   │   │   ├── Cliente.java              # Entidad de cliente
-│   │   │   ├── Vehiculo.java             # Entidad de vehículo
-│   │   │   └── Revision.java             # Entidad de revisión
-│   │   └── negocio/
-│   │       ├── Clientes.java             # Gestión de clientes
-│   │       ├── Vehiculos.java            # Gestión de vehículos
-│   │       └── Revisiones.java           # Gestión de revisiones
-│   └── vista/
-│       └── GestionTallerMecanico.java    # Interfaz gráfica (GUI)
-└── test/java/                             # Tests unitarios
+src/main/java/org/iesalandalus/programacion/tallermecanico/
+├── modelo/
+│   ├── Modelo.java
+│   ├── dominio/ (Cliente, Vehiculo, Revision)
+│   └── negocio/ (Clientes, Vehiculos, Revisiones)
+└── vista/
+    └── GestionTallerMecanico.java (GUI)
 ```
 
-## 💡 Cómo usar
+## Cómo usar
 
-1. **Agregar un cliente**:
-   - Rellena los campos (Nombre, DNI, Teléfono)
-   - Haz clic en "➕ Añadir Cliente"
+1. **Clientes**: Agregar nombre, DNI y teléfono
+2. **Vehículos**: Registrar marca, modelo y matrícula
+3. **Revisiones**: Crear seguimiento de reparaciones
 
-2. **Agregar un vehículo**:
-   - Introduce Marca, Modelo y Matrícula
-   - Pulsa "➕ Añadir Vehículo"
+Los datos incluyen validaciones para DNI español, teléfono y matrícula.
 
-3. **Crear una revisión**:
-   - Selecciona cliente y vehículo
-   - Haz clic en "➕ Iniciar Revisión"
+## Tecnologías
 
-4. **Eliminar registros**:
-   - Selecciona la fila en la tabla
-   - Pulsa el botón de eliminar
-
-## 📝 Validaciones implementadas
-
-- **DNI**: Formato válido español (8 números + letra correcta)
-- **Teléfono**: 9 dígitos numéricos
-- **Nombre cliente**: Palabras con mayúscula inicial
-- **Matrícula vehículo**: 4 números + 3 letras (formato español)
-
-## 📊 Cálculo de costos
-
-El precio de una revisión se calcula como:
-```
-Precio = (Horas × 10 €) + (Días × 30 €) + Precio del material
-```
-
-Donde:
-- **Horas**: Tiempo dedicado a la reparación
-- **Días**: Días que el vehículo permanece en el taller
-- **Material**: Coste de piezas y suministros utilizados
-
-## 🔗 Información del proyecto
-
-- **Profesor**: José Ramón Jiménez Reyes
-- **Rama principal**: `master`
-- **Rama de desarrollo**: `sprint_inicial`
-- **Estado**: En desarrollo (Sprint 1)
-
-## 📄 Licencia
-
-Este proyecto es parte de una tarea educativa.
-
----
-
-**Última actualización**: Febrero 2026
+- Java 11
+- Gradle
+- Swing (interfaz)
+- JUnit 5 y Mockito (testing)
